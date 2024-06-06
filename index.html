@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Interactive Input Form</h1>
+        <form id="inputForm">
+
+            <div class="input-group">
+                <label for="numberInput">Enter Temperature:</label>
+                <input type="number" value="0" placeholder="Temperature" id="numberInput" class="input-bar">
+            </div>
+
+            <div class="input-group">
+                <label for="inputType">Select Input Unit:</label>
+                <select id="inputType" class="input-bar">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit"> Fahrenheit (°F)</option>
+                    <option value="felvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="outputType">Select Output Unit:</label>
+                <select id="outputType" class="input-bar">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit"> Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="button" id="submitBtn" class="animated-button">Submit</button>
+                <button type="reset" id="resetBtn" class="animated-button">Reset</button>
+            </div>
+        </form>
+
+        <div id="outputBox" class="output-box hidden">
+            <h2>Output:</h2>
+            <p id="outputContent" style="border-color: aquamarine ;"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
